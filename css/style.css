@@ -72,6 +72,35 @@ img{
 }
 
 /*=============== HEADER & NAV ===============*/
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--body-color);
+    border-bottom: 1px solid var(--text-color);
+    z-index: var(--z-fixed);
+}
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    letter-spacing: 3px;
+}
+
+.nav__toggle,
+.nav__close{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
 
 
 /* Navigation for mobile devices */
