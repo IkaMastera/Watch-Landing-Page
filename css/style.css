@@ -287,6 +287,15 @@ img{
 
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+    width: 0.6rem;
+    background-color: hsl(0, 0%, 12%);
+}
+
+::-webkit-scrollbar-thumb{
+    width: 0.6rem;
+    background-color: hsl(0, 0%, 20%);
+}
 
 
 /*=============== BREAKPOINTS ===============*/
