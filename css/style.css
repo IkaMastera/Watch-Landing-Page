@@ -171,6 +171,10 @@ img{
 .home__content,
 .home__images,
 .home__info-content{
+    display: grid;
+}
+
+.home__container{
     padding-block: 9rem 3rem;
     row-gap: 3rem;
 }
@@ -213,7 +217,7 @@ img{
     transition: border-color 0.4s;
 }
 
-.home__buton i{
+.home__button i{
     font-size: 1.25rem;
 }
 
@@ -221,7 +225,7 @@ img{
     border-color: var(--title-color);
 }
 
-.hone__images{
+.home__images{
     position: relative;
 }
 
@@ -241,7 +245,7 @@ img{
     width: 120px;
 }
 
-.home__info-img{
+.home__info-content{
     row-gap: 1.5rem;
 }
 
@@ -264,25 +268,25 @@ img{
 
 /* Swiper class */
 .swiper{
-    margin-inline: initial;
+    margin-inline: initial !important;
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal{
-    bottom: -2rem;
+    bottom: -2rem !important;
 }
 
 .swiper-pagination-bullet{
-    width: 1rem;
-    height: 0.15rem;
-    border-radius: 0;
-    background-color: var(--text-color);
-    opacity: 1;
-    transition: background-color 0.3s, width 0.3s;
+    width: 1rem !important;
+    height: 0.15rem !important;
+    border-radius: 0 !important;
+    background-color: var(--text-color) !important;
+    opacity: 1 !important;
+    transition: background-color 0.3s, width 0.3s !important;
 }
 
 .swiper-pagination-bullet-active{
-    width: 1.5rem;
-    background-color: var(--title-color);
+    width: 1.5rem !important;
+    background-color: var(--title-color) !important;
 }
 
 
@@ -312,7 +316,7 @@ img{
     }
 
     .home__button-link{
-        justify-items: center;
+        justify-self: center;
     }
 }
 
